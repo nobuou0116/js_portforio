@@ -1,0 +1,79 @@
+main {
+  width: 300px;
+  margin: 0 auto;
+}
+
+main img {
+  vertical-align: bottom;
+}
+
+main ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+main #main {
+  width: 300px;
+  height: 200px;
+  margin-bottom: 8px;
+}
+
+main nav {
+  margin-bottom: 8px;
+}
+
+main nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main nav ul li {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+main nav ul li:hover {
+  background-color: #f8f8f8;
+}
+
+main #play {
+  width: 140px;
+}
+
+main #prev, main #next {
+  width: 60px;
+}
+
+main #thums img {
+  width: 56px;
+}
+
+main #thums {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (56px)[5];
+      grid-template-columns: repeat(5, 56px);
+  gap: 5px;
+}
+
+main #thums li {
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+main #thums li:hover, main #thums li.current {
+  opacity: 1.1;
+}
+/*# sourceMappingURL=style.css.map */

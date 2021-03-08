@@ -1,0 +1,68 @@
+$cSilver:silver;
+$cWhite:white;
+$cBlack:black;
+
+body {
+  background-color:$cSilver;
+  font-size: 30px;
+  user-select: none;
+
+  & h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-top:30px;
+  }
+
+  & .container {
+    background-color: $cWhite;
+    text-align: center;
+    margin:20px auto;
+    padding:40px;
+    width:300px;
+  }
+  
+  & #timer {
+    background-color: $cSilver;
+    padding:20px;
+    border-radius: 10px;
+    border:2px solid $cBlack
+  }
+  
+  & .btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;;
+
+    & :hover {
+      opacity:0.9;
+    }
+
+    // activeか反映されるのがbtnsとbtnにわかれるのはなぜ↓↓
+
+    & :active {
+      opacity: 0.4;
+      position: relative;
+      top:3px;
+    }
+
+    & .btn {
+      background-color: $cSilver;
+      padding:12px 26px;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 4px;
+
+      &:active {
+        box-shadow: 0 1px;
+      }
+    }
+
+    & .inactive {
+      opacity:0.4;
+      pointer-events: none;
+    }
+  }
+
+
+}

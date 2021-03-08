@@ -1,0 +1,76 @@
+body {
+  background-color: #ccc;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  font-weight: bold;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body #container {
+  margin: 16px auto;
+}
+
+body #timer {
+  margin-bottom: 8px;
+  font-size: 20px;
+  text-align: right;
+}
+
+body #board {
+  list-style: none;
+  margin: 0 0 8px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body #board li {
+  background-color: #00aaff;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  line-height: 40px;
+  text-align: center;
+  -webkit-box-shadow: 0 4px 0 #0088cc;
+          box-shadow: 0 4px 0 #0088cc;
+}
+
+body #board li.pressed {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #ccc;
+  margin-top: 9px;
+  margin-bottom: 1px;
+}
+
+body #btn {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: #f44336;
+  padding: 8px;
+  text-align: center;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 4px #d1483e;
+          box-shadow: 0 4px #d1483e;
+}
+
+body #btn:active {
+  margin-top: 12px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+/*# sourceMappingURL=style.css.map */

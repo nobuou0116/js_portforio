@@ -1,0 +1,70 @@
+body {
+  background-color: silver;
+  font-size: 30px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body h1 {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+body .container {
+  background-color: white;
+  text-align: center;
+  margin: 20px auto;
+  padding: 40px;
+  width: 300px;
+}
+
+body #timer {
+  background-color: silver;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+body .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 15px;
+}
+
+body .btns :hover {
+  opacity: 0.9;
+}
+
+body .btns :active {
+  opacity: 0.4;
+  position: relative;
+  top: 3px;
+}
+
+body .btns .btn {
+  background-color: silver;
+  padding: 12px 26px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 4px;
+          box-shadow: 0 4px;
+}
+
+body .btns .btn:active {
+  -webkit-box-shadow: 0 1px;
+          box-shadow: 0 1px;
+}
+
+body .btns .inactive {
+  opacity: 0.4;
+  pointer-events: none;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,116 @@
+body {
+  background-color: #efdec1;
+  font-size: 14px;
+  font-family: Verdana, sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body .container {
+  position: relative;
+  width: 600px;
+  margin: 8px auto;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 30px;
+}
+
+body #question {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+body #choices {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+}
+
+body #choices li {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+body #choices li:hover {
+  background-color: #f8f8f8;
+}
+
+body #choices li.correct {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+  font-weight: bold;
+}
+
+body #choices li.correct:after {
+  content: ' ...correct!!';
+}
+
+body #choices li.wrong {
+  background-color: #f8d8da;
+  border-color: #f5c6cb;
+  color: #721c24;
+  font-weight: bold;
+}
+
+body #choices li.wrong:after {
+  content: ' ...wrong!!';
+}
+
+body #btn {
+  background-color: #3498db;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  -webkit-box-shadow: 0 4px #2880b9;
+          box-shadow: 0 4px #2880b9;
+}
+
+body #btn.disabled {
+  background-color: #ccc;
+  -webkit-box-shadow: 0 4px #bbb;
+          box-shadow: 0 4px #bbb;
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+body #result {
+  position: absolute;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid black;
+  height: 340px;
+  width: 660px;
+  margin: 0 auto;
+  top: -2px;
+  left: 0;
+  right: 0;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+body #result.hidden {
+  -webkit-transform: translateY(-500px);
+          transform: translateY(-500px);
+}
+
+body #result p {
+  font-size: 40px;
+  padding-top: 40px;
+}
+
+body #result a {
+  padding: 10px 150px;
+  font-size: 25px;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,67 @@
+$cAivory:#eee;
+$cRed:red;
+$cBlue:blue;
+$cWhite:white;
+$cBlack:black;
+
+
+body {
+  font-size: 14px;
+}
+
+table {
+  border:2px solid $cAivory;
+  border-collapse: collapse;
+  
+  & th,td {
+    text-align: center;
+    width:60px;
+    height:60px;
+
+    &.disabled {
+      opacity: 0.3;
+    }
+
+    &.today {
+      font-weight: bold;
+      font-size: 1.5em;
+      cursor: pointer;
+    }
+  }
+  
+  & thead,tfoot {
+    background-color: $cAivory;
+    font-weight: bold;
+
+    & #title {
+      border-bottom:1px solid $cBlack
+    }
+
+    & #day > th {
+      border:1px solid $cBlack
+    }
+
+    & #today {
+      cursor: pointer;
+      
+    }
+  }
+  
+  & tbody {
+    
+    & tr :first-child {
+      color:$cRed;
+    }
+    
+    & tr :last-child {
+      color:$cBlue;
+    }
+  
+}
+
+  & #prev, #next {
+    cursor:pointer;
+    user-select: none;
+  }
+
+}

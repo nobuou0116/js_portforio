@@ -1,0 +1,58 @@
+body {
+  font-size: 14px;
+}
+
+table {
+  border: 2px solid #eee;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  text-align: center;
+  width: 60px;
+  height: 60px;
+}
+
+table th.disabled, table td.disabled {
+  opacity: 0.3;
+}
+
+table th.today, table td.today {
+  font-weight: bold;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+table thead, table tfoot {
+  background-color: #eee;
+  font-weight: bold;
+}
+
+table thead #title, table tfoot #title {
+  border-bottom: 1px solid black;
+}
+
+table thead #day > th, table tfoot #day > th {
+  border: 1px solid black;
+}
+
+table thead #today, table tfoot #today {
+  cursor: pointer;
+}
+
+table tbody tr :first-child {
+  color: red;
+}
+
+table tbody tr :last-child {
+  color: blue;
+}
+
+table #prev, table #next {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+/*# sourceMappingURL=style.css.map */

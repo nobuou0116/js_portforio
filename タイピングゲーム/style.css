@@ -1,0 +1,19 @@
+body {
+  padding-top: 150px;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body #target {
+  font-size: 48px;
+  letter-spacing: 0.1em;
+}
+
+body #result {
+  font-size: 60px;
+  color: blue;
+}
+/*# sourceMappingURL=style.css.map */

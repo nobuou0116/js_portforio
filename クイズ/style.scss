@@ -1,0 +1,125 @@
+$cBeige:#efdec1;
+$cWhite:#fff;
+$cBlack:black;
+$cGrey:#ccc;
+$clGrey:#f8f8f8;
+$chGrey:#bbb;
+$cBlue:#3498db;
+$cNavy:#2880b9;
+$clCorrect:#d4edda;
+$cbCorrect:#c3e6cb;
+$cCorrect:#155724;
+$clWrong:#f8d8da;
+$cbWrong:#f5c6cb;
+$cWrong:#721c24;
+
+
+body {
+  background-color: $cBeige;
+  font-size: 14px;
+  font-family: Verdana, sans-serif;
+  user-select: none;
+
+  & .container {
+    position: relative;;
+    width:600px;
+    margin:8px auto;
+    background-color:$cWhite;
+    border:1px solid $cBlack;
+    border-radius: 4px;
+    padding:30px;
+  }
+
+  & #question {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  & #choices {
+    list-style: none;
+    padding:0;
+    margin:30px 0;
+    
+    & li {
+      border:1px solid $cGrey;
+      border-radius:4px;
+      padding:10px;
+      margin-bottom:10px;
+      cursor: pointer;
+      
+      &:hover {
+        background-color: $clGrey;
+      }
+
+      &.correct {
+        background-color:$clCorrect;
+        border-color: $cbCorrect;
+        color: $cCorrect;
+        font-weight:bold;
+
+        &:after {
+          content:' ...correct!!';
+        }
+      }
+      
+      &.wrong {
+        background-color:$clWrong;
+        border-color: $cbWrong;
+        color: $cWrong;
+        font-weight:bold;
+
+        &:after {
+          content:' ...wrong!!';
+        }
+      }
+    }
+  }
+    & #btn {
+      background-color: $cBlue;
+      padding:8px;
+      border-radius:4px;
+      cursor:pointer;
+      text-align: center;
+      color: $cWhite;
+      box-shadow: 0 4px $cNavy;
+      
+      &.disabled {
+        background-color: $cGrey;
+        box-shadow: 0 4px $chGrey;
+        opacity: 0.7;
+        pointer-events: none;
+
+      }
+    }
+  
+  & #result {
+    position: absolute;
+    background-color: $cWhite;
+    text-align: center;
+    border-radius: 4px;
+    border:1px solid $cBlack;
+    height: 340px;
+    width: 660px;
+    margin: 0 auto;
+    top:-2px;
+    left:0;
+    right:0;
+    transition: 0.8s;
+
+    &.hidden {
+      transform: translateY(-500px);
+    }
+
+    & p {
+      font-size:40px;
+      padding-top:40px;
+    }
+
+    & a {
+      padding:10px 150px;
+      font-size: 25px;
+      text-decoration: none;
+    }
+  }
+
+  }

@@ -1,0 +1,17 @@
+$Knicks:blue;
+
+body {
+  padding-top:150px;
+  text-align: center;
+  user-select: none;
+
+  & #target {
+    font-size: 48px;
+    letter-spacing: 0.1em;
+  }
+
+  & #result {
+    font-size: 60px;
+    color:$Knicks;
+  }
+}
