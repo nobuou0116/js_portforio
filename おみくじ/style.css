@@ -1,0 +1,40 @@
+body {
+  background-color: #efefef;
+  text-align: center;
+}
+
+body h1 {
+  margin-top: 50px;
+}
+
+#btn {
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+  margin: 30px auto;
+  border-radius: 60%;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 200px;
+  -webkit-box-shadow: 0 10px navy;
+          box-shadow: 0 10px navy;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#btn:hover {
+  opacity: 0.8;
+}
+
+#btn:active {
+  -webkit-box-shadow: 0 5px navy;
+          box-shadow: 0 5px navy;
+  margin-top: 40px;
+  -webkit-transition-delay: 2s;
+          transition-delay: 2s;
+}
+/*# sourceMappingURL=style.css.map */

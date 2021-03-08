@@ -1,0 +1,39 @@
+$cBlue: blue;
+$cNavy:navy;
+$cwhite: white;
+
+
+body {
+  background-color:#efefef;
+  text-align: center;
+
+  & h1 {
+    margin-top:50px;
+  }
+}
+
+#btn {
+  background-color:$cBlue;
+  width:200px;
+  height:200px;
+  margin:30px auto;
+  border-radius: 60%;
+  color:$cwhite;
+  font-size:50px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 200px;
+  box-shadow: 0 10px $cNavy;
+  user-select: none;
+  
+  &:hover {
+    opacity: 0.8;
+  }
+  
+  &:active {
+    box-shadow: 0 5px $cNavy;
+    margin-top:40px;
+    transition-delay:2s;
+  }
+}
+
